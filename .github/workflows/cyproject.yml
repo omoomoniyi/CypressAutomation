@@ -1,19 +1,13 @@
-name: E2E on Chrome
-
+name: end-to-end tests chrome headless
 on: [push]
-
 jobs:
-  install:
-    runs-on: ubuntu-latest
+  cypress-run:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v3
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v2
         with:
-          project: ./site
+          start: npm start
+          wait-on: "http://localhost:5000"
           browser: chrome
-          build: yarn build
-          start: yarn start
-          wait-on: "http://localhost:3000"
+          headless: true
