@@ -7,6 +7,9 @@ it('Successful Login With Valid Credentials', () =>
         cy.get('#username').type('student')
         cy.get('#password').type('Password123')
         cy.get('#submit').click()
+        cy.wait(3000)
+        cy.get('.wp-block-button__link').should('be.visible')
+
 
 
         // cy.wait(6000)
