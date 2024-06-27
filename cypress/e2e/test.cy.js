@@ -4,7 +4,9 @@ it('Successful Login With Valid Credentials', () =>
     
     {
         cy.visit('https://customer-code.surge.sh/#/')
+        cy.wait(6000)
         cy.get(':nth-child(2) > .form__input').type('omoniyitest')
+        cy.wait(6000)
         cy.get(':nth-child(4) > .form__input').type('omoniyitest')
         cy.wait(6000)
         cy.get('.btn').click()
