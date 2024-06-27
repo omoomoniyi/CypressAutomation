@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Ensure Cypress binary permissions
-        run: sudo chmod +x ./node_modules/.bin/cypress
+      - name: Install Cypress binary
+        run: npx cypress install
 
       - name: Run Cypress tests
         run: npx cypress run
