@@ -12,12 +12,6 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
 
-    services:
-      xvfb: # Virtual framebuffer for GUI-based tests
-        image: cypress/base:10
-        options: >-
-          --privileged
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -29,6 +23,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Ensure Cypress binary permissions
+        run: sudo chmod +x ./node_modules/.bin/cypress
 
       - name: Run Cypress tests
         run: npx cypress run
