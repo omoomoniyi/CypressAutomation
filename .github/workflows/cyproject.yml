@@ -33,8 +33,8 @@ jobs:
       - name: Ensure Cypress binary permissions after install
         run: sudo chmod +x ~/.cache/Cypress/*/Cypress/Cypress
 
-      - name: Run Cypress tests
-        run: npx cypress run
+      - name: Run Cypress tests in headless mode
+        run: npx cypress run --headless
 
       - name: Archive test results
         if: always()
