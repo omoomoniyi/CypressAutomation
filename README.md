@@ -1,6 +1,7 @@
 ## Login Automation with Cypress JS
 
-Introduction
+## Introduction
+
 This project demonstrates how to automate the login process using Cypress, a powerful end-to-end testing framework for web applications. Cypress allows for easy and reliable testing of all aspects of your web application, including the login functionality.
 
 ## Features
