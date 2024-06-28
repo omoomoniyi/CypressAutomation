@@ -38,16 +38,8 @@ Cypress (included in the dependencies)
     ```bash
     yarn install
     ```
+## 🚀 Test Execution:
 
-## Configuration
-
-You can configure Cypress settings by modifying the `cypress.json` file in the root of the project. This file contains various configuration options such as base URL, viewport size, and more.
-
-Example `cypress.json`:
-
-```json
-{
-  "baseUrl": "http://localhost:3000",
-  "viewportWidth": 1280,
-  "viewportHeight": 720
-}
+Step 1 - Clone project on IDE and make a change to READMe file
+Step 2 - Commit and push back change
+Step 3 - Watch the automation script run.
