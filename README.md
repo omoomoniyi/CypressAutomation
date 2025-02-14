@@ -43,3 +43,4 @@ Cypress (included in the dependencies)
 Step 1 - Clone project on IDE and make a change to READMe file
 Step 2 - Commit and push back change
 Step 3 - Watch the automation script run.
+Step 4 - Checking
